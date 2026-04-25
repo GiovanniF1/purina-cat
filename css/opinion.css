@@ -1,0 +1,175 @@
+.main-header{
+    background: linear-gradient(to right, #000, #8b0000);
+    border: 3px solid black;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Header fijo arriba */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-icon{
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-container{
+    position: relative;
+}
+
+.submenu{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 220px;
+    display: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.submenu li a{
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.submenu li a:hover{
+    background: #e60023;
+}
+
+.menu-container:hover .submenu{
+    display: block;
+}
+
+.logo img{
+    width: 100px;
+    height: 60px;
+    border-radius: 10%;
+    border: 3px solid white;
+}
+
+.main-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.main-nav ul li a:hover{
+    background: red;
+}
+
+/*cuerpo*/
+body {
+    padding-top: 95px;
+    background: linear-gradient(to bottom, #000, #370000);
+    color: #fff;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1{
+    color: #ffb52c;
+}
+
+form {
+    background-color: #1a1a1a;
+    border: 2px solid #ff0000;
+    border-radius: 12px;
+    padding: 25px;
+    width: 50%;
+    margin: 30px auto;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.9);
+}
+
+label {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+    background-color: #333;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin: 5px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(45deg, #ff0000, #990000);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(45deg, #ffffff, #ff0000);
+    color: #000;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #ff0000;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}

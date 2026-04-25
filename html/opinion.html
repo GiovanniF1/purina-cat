@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PURINA - Opiniones de clientes</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/opinion.css">
+</head>
+
+<header class="main-header">
+        <div class="left-section">
+
+            <div class="logo">
+                <img src="../img/logo.jpeg" alt="Purina Logo">
+            </div>
+
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="marcas.html">Marcas</a></li>
+            <li><a href="regitro.html">Registro</a></li>
+            <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+</header>
+
+<body>
+
+<h1>Opiniones de clientes</h1>
+
+<p>Comparte tu experiencia con nuestros productos para gatos.</p>
+
+<form action="mailto:opiniones@purina.com" method="post" enctype="text/plain">
+
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <label for="tipo">Tipo:</label><br>
+    <select id="tipo" name="tipo">
+        <option value="humedo">Húmedo</option>
+        <option value="latas">Latas</option>
+        <option value="seco">Seco</option>
+        <option value="snacks">Snacks</option>
+        <option value="sobres">Sobres</option>
+    </select><br><br>
+
+    <label for="producto">Producto:</label><br>
+    <textarea id="producto" name="producto" rows="5" cols="40"></textarea><br><br>
+
+    <label>Calificación:</label><br>
+    <input type="radio" name="calificacion" value="1">1
+    <input type="radio" name="calificacion" value="2">2
+    <input type="radio" name="calificacion" value="3">3
+    <input type="radio" name="calificacion" value="4">4
+    <input type="radio" name="calificacion" value="5">5
+    <br><br>
+
+    <label for="comentario">Comentario:</label><br>
+    <textarea id="comentario" name="comentario" rows="5" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Enviar opinión">
+
+</form>
+
+</body>
+
+<footer>
+        <p>PURINA</p>
+    </footer>
+</html>

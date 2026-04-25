@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PURINA - Menú</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/menu.css">
+    <style>
+        
+            table {
+                border-collapse: collapse;
+                width: 85%;
+                margin: 20px auto;
+                background-color: #111;
+                box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+            }
+
+            caption {
+                font-weight: bold;
+                font-size: 22px;
+                color: #ffb52c;
+                margin: 10px;
+            }
+
+            th {
+                border: 2px solid #ff0000;
+                background-color: #1a1a1a;
+                color: #ffb52c;
+                padding: 10px;
+            }
+
+            td {
+                border: 1px solid #333;
+                padding: 10px;
+            }
+                    
+    </style>
+</head>
+
+<header class="main-header">
+        <div class="left-section">
+
+            <div class="logo">
+                <img src="../img/logo.jpeg" alt="Purina Logo">
+            </div>
+
+            <div class="menu-container">
+                <div class="menu-icon">☰</div>
+
+                <ul class="submenu">
+                    <li><a href="#Dietas">Dietas para gatos</a></li>
+                    <li><a href="#Tabla">Tabla de alimentación de los gatos</a></li>
+                    <li><a href="#Menu">Menú por categorías</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="marcas.html">Marcas</a></li>
+            <li><a href="opinion.html">Opiniones</a></li>
+            <li><a href="regitro.html">Registro</a></li>
+            <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+</header>
+
+<body>
+
+<h2 id="Dietas">Dietas para gatos</h2>
+
+<embed 
+    src="../archivos_descarga/dietas.pdf" 
+    type="application/pdf" 
+    width="500" 
+    height="400">
+</embed>
+
+
+<table summary="Comparación de categorías de alimento para gatos con descripción, ventajas y cantidad recomendada">
+    <caption id="Tabla">Tabla de alimentación de los gatos</caption>
+
+    <tr>
+        <th id="categoria" scope="col">Categoría</th>
+        <th id="descripcion" scope="col">Descripción</th>
+        <th id="ventajas" scope="col">Ventajas</th>
+        <th id="cantidad" scope="col">Cantidad recomendada</th>
+    </tr>
+
+    <tr class="humedo">
+        <th headers="categoria" scope="row">Húmedo</th>
+        <td headers="descripcion">Alimento con alto contenido de agua.</td>
+        <td headers="ventajas">Ayuda a mantener hidratado al gato.</td>
+        <td headers="cantidad" rowspan="2">1 a 2 porciones al día</td>
+    </tr>
+
+    <tr>
+        <th headers="categoria" scope="row">Latas</th>
+        <td headers="descripcion">Comida húmeda presentada en lata.</td>
+        <td headers="ventajas">Mayor duración y buena conservación.</td>
+    </tr>
+
+    <tr class="seco">
+        <th headers="categoria" scope="row">Seco</th>
+        <td headers="descripcion" colspan="1">Croquetas o alimento deshidratado.</td>
+        <td headers="ventajas">Fácil almacenamiento y ayuda a limpiar dientes.</td>
+        <td headers="cantidad">50-100 g diarios</td>
+    </tr>
+
+    <tr>
+        <th headers="categoria" scope="row">Snacks</th>
+        <td headers="descripcion">Premios o golosinas para gatos.</td>
+        <td headers="ventajas" colspan="1">Útiles para entrenamiento o recompensa.</td>
+        <td headers="cantidad">Pocas piezas al día</td>
+    </tr>
+
+    <tr>
+        <th headers="categoria" scope="row">Sobres</th>
+        <td headers="descripcion">Alimento húmedo en presentación individual.</td>
+        <td headers="ventajas">Práctico y fácil de servir.</td>
+        <td headers="cantidad">1 sobre por comida</td>
+    </tr>
+
+    </table>
+
+<h1 id="Menu">Menú por categorías</h1>
+
+<div class="menu-categorias">
+
+    <a href="humedo.html">
+    <div class="categoria">
+    <img src="../img/humedo.jpg" alt="Alimento húmedo para gatos" name="humedo" width="150" height="120" border="3">
+    <h3>Húmedo</h3>
+    <p>Comida suave y jugosa ideal para mantener hidratado a tu gato.</p>
+    </div>
+    </a>
+
+    <a href="latas.html">
+    <div class="categoria">
+    <img src="../img/latas.jpg" alt="Comida para gatos en lata" name="latas" width="150" height="120" border="3">
+    <h3>Latas</h3>
+    <p>Alimento húmedo en lata con gran sabor y buena conservación.</p>
+    </div>
+    </a>
+
+    <a href="seco.html">
+    <div class="categoria">
+    <img src="../img/seco.jpg" alt="Croquetas para gatos" name="seco" width="150" height="120" border="3">
+    <h3>Seco</h3>
+    <p>Croquetas balanceadas que ayudan a la salud dental del gato.</p>
+    </div>
+    </a>
+
+    <a href="snacks.html">
+    <div class="categoria">
+    <img src="../img/snacks.jpg" alt="Snacks para gatos" name="snacks" width="150" height="120" border="3">
+    <h3>Snacks</h3>
+    <p>Pequeños premios para consentir y recompensar a tu gato.</p>
+    </div>
+    </a>
+
+    <a href="sobres.html">
+    <div class="categoria">
+    <img src="../img/sobres.jpg" alt="Alimento para gatos en sobres" name="sobres" width="150" height="120" border="3">
+    <h3>Sobres</h3>
+    <p>Porciones individuales fáciles de servir y muy apetecibles.</p>
+    </div>
+    </a>
+
+</div>
+
+</div>
+
+</body>
+
+<footer>
+        <p>PURINA</p>
+    </footer>
+</html>

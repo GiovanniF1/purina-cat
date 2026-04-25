@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>PURINA - Registro </title>
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/regitro.css">
+</head>
+
+<header class="main-header">
+        <div class="left-section">
+
+            <div class="logo">
+                <img src="../img/logo.jpeg" alt="Purina Logo">
+            </div>
+
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="marcas.html">Marcas</a></li>
+                <li><a href="opinion.html">Opiniones</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+            </ul>
+        </nav>
+</header>
+
+<body>
+
+<h2>Formulario de Registro de Dueños de Gatos</h2>
+
+<form action="procesar.php" method="post" enctype="text/plain" accept="text/html">
+
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" name="nombre" id="nombre" size="30" maxlength="20" value=""><br><br>
+
+    <label for="apellidos">Apellidos:</label><br>
+    <input type="text" name="apellidos" id="apellidos" size="30" maxlength="30" value=""><br><br>
+
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="email" name="correo" id="correo" size="30" maxlength="40"><br><br>
+
+    <label for="telefono">Teléfono:</label><br>
+    <input type="tel" name="telefono" id="telefono" size="15" maxlength="10"><br><br>
+
+    <label for="gatos">¿Cuántos gatos tienes?</label><br>
+    <input type="number" name="gatos" id="gatos" value="1"><br><br>
+
+    <label>Tipo de alimento que usas:</label><br>
+    <input type="radio" name="alimento" value="seco" checked> Seco<br>
+    <input type="radio" name="alimento" value="humedo"> Húmedo<br>
+    <input type="radio" name="alimento" value="casero"> Casero<br><br>
+
+    <label>Servicios que te interesan:</label><br>
+    <label style="color: white;">
+        <input type="checkbox" name="servicio1" value="veterinario" checked>
+        Veterinario
+    </label><br>
+
+    <label style="color: white;">
+        <input type="checkbox" name="servicio2" value="estetica">
+        Estética
+    </label><br>
+
+    <label style="color: white;">
+        <input type="checkbox" name="servicio3" value="alimentos">
+        Alimentos
+    </label><br>
+
+    <label for="edad_gato">Edad de tu gato:</label><br>
+    <select name="edad_gato" id="edad_gato">
+        <option value="cachorro">Cachorro</option>
+        <option value="joven">Joven</option>
+        <option value="adulto">Adulto</option>
+        <option value="senior">Senior</option>
+    </select><br><br>
+
+    <label for="comentarios">Comentarios:</label><br>
+    <textarea name="comentarios" id="comentarios" rows="4" maxlength="100"></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+</body>
+
+<footer>
+        <p>PURINA</p>
+    </footer>
+
+</html>

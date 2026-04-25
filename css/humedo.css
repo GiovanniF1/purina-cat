@@ -1,0 +1,174 @@
+.main-header{
+    background: linear-gradient(to right, #000, #8b0000);
+    border: 3px solid black;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Header fijo arriba */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-icon{
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-container{
+    position: relative;
+}
+
+.submenu{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 220px;
+    display: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.submenu li a{
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.submenu li a:hover{
+    background: #e60023;
+}
+
+.menu-container:hover .submenu{
+    display: block;
+}
+
+.logo img{
+    width: 100px;
+    height: 60px;
+    border-radius: 10%;
+    border: 3px solid white;
+}
+
+.main-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.main-nav ul li a:hover{
+    background: red;
+}
+
+/*cuerpo*/
+body{
+    padding-top: 95px;
+    margin: 0;
+    background: linear-gradient(to bottom, #000, #370000);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.hum{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.hum h1{
+    width: 100%;
+    text-align: center;
+    color: #ffb52c;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hum > div{
+    width: 320px;
+    background: #151515;
+    border: 2px solid #ff0000;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255,0,0,0.35);
+    transition: 0.3s;
+}
+
+.hum > div:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255,0,0,0.75);
+}
+
+.hum > div h2{
+    color: #ffb52c;
+    margin: 10px 0;
+}
+
+.hum > div img{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin: 10px 0;
+}
+
+.hum > div p{
+    color: #ddd;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.hum > div button{
+    background: #b30000;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.hum > div button:hover{
+    background: red;
+    transform: scale(1.05);
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
